@@ -1,0 +1,9 @@
+﻿<parameters>
+  <parameter name="IIS Web Application Name" defaultValue="Default Web Site/ControleDeRota_deploy" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Paulo\\Documents\\Visual\ Studio\ 2015\\Projects\\ControleDeRota\\ControleDeRota\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Paulo\\Documents\\Visual\ Studio\ 2015\\Projects\\ControleDeRota\\ControleDeRota\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="ControleDeRotas-Web.config Connection String" defaultValue="Data Source=PauloNote;Initial Catalog=dbControleDeRota;Integrated Security=True;">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Paulo\\Documents\\Visual\ Studio\ 2015\\Projects\\ControleDeRota\\ControleDeRota\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ControleDeRotas']/@connectionString" />
+  </parameter>
+</parameters>

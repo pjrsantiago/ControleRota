@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ControleDeRotas-Web.config Connection String" description="ControleDeRotas Connection String used in web.config by the application to access the database." defaultValue="Data Source=PauloNote;Initial Catalog=dbControleDeRota;Integrated Security=True;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Paulo\\Documents\\Visual\ Studio\ 2015\\Projects\\ControleDeRota\\ControleDeRota\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ControleDeRotas']/@connectionString" />
+  </parameter>
+</parameters>

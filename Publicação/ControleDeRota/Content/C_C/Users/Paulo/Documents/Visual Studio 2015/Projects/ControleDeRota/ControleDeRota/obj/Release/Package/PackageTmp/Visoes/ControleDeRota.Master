@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="ControleDeRota.master.cs" Inherits="ControleDeRota.Visoes.ControleDeRota" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="~/css/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+            <asp:Label ID="lblTitulo" runat="server" Text="Sistema de Controle de Rotas" CssClass="tituloSup"></asp:Label>
+        
+        <br />
+        <asp:Menu ID="Menu1" runat="server" BackColor="White" Orientation="Horizontal">
+            <DynamicMenuItemStyle BackColor="White" />
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Visoes/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem Text="Cadastros" Value="Cadastros">
+                    <asp:MenuItem NavigateUrl="~/Visoes/CadClientes.aspx" Text="Clientes" Value="Clientes"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Visoes/CadVendedores.aspx" Text="Vendedores" Value="Vendedores"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Visoes/CadRotas.aspx" Text="Rotas" Value="Rotas"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Visoes/ListaRota.aspx" Text="Rotas" Value="Rotas"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <br />
+    </div>
+    </form>
+</body>
+</html>
